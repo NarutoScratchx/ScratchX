@@ -157,7 +157,7 @@
             dataType:'json',
             timeout:5000,
             success: function(data) {
-                callback(data.temp);
+                callback(data.light);
             },
             error : function(){
             },
@@ -173,7 +173,7 @@
             dataType:'json',
             timeout:5000,
             success: function(data) {
-                callback(data.temp);
+                callback(data.Motion);
             },
             error : function(){
             },
