@@ -135,7 +135,7 @@
   };
 
   /* Temp & Humidity */
-  ext.get_temp-humidity = function(callback) {
+  ext.get_temp_humidity = function(callback) {
     $.ajax({
             url:'https://' + hostname + '/temp-humidity.json',
             dataType:'json',
@@ -229,6 +229,9 @@ var descriptor = {
     [" ", "カメラ撮影する", "shot", '', ""],
     ["R", "センサーのCO2濃度", "get_co2", ""],
     ["R", "センサーの温度", "get_temp",""],
+    ["R", "センサーの温度,湿度", "get_temp_humidity",""],
+    ["R", "センサーの照度", "get_light",""],
+    ["R", "動きセンサーの値", "get_pir",""],
     ["R", "距離センサーの値", "get_distance",""]
   ],
 //  "menus": {
