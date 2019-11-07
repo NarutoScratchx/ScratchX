@@ -135,13 +135,13 @@
   };
 
   /* Temp & Humidity */
-  ext.get_temp_humidity = function(callback) {
+  ext.get_humidity = function(callback) {
     $.ajax({
-            url:'https://' + hostname + '/temp-humidity.json',
+            url:'https://' + hostname + '/humidity.json',
             dataType:'json',
             timeout:5000,
             success: function(data) {
-                callback(data.temp);
+                callback(data.humidity);
             },
             error : function(){
             },
