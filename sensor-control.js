@@ -134,6 +134,53 @@
     });
   };
 
+  /* Temp & Humidity */
+  ext.get_temp-humidity = function(callback) {
+    $.ajax({
+            url:'https://' + hostname + '/temp-humidity.json',
+            dataType:'json',
+            timeout:5000,
+            success: function(data) {
+                callback(data.temp);
+            },
+            error : function(){
+            },
+            complete: function(data) {
+            }
+    });
+  };
+
+  /* light */
+  ext.get_light= function(callback) {
+    $.ajax({
+            url:'https://' + hostname + '/light.json',
+            dataType:'json',
+            timeout:5000,
+            success: function(data) {
+                callback(data.temp);
+            },
+            error : function(){
+            },
+            complete: function(data) {
+            }
+    });
+  };
+
+  /* Motion Detect */
+  ext.get_pir= function(callback) {
+    $.ajax({
+            url:'https://' + hostname + '/pir.json',
+            dataType:'json',
+            timeout:5000,
+            success: function(data) {
+                callback(data.temp);
+            },
+            error : function(){
+            },
+            complete: function(data) {
+            }
+    });
+  };
   /* Distance */
   ext.get_distance = function(callback) {
     $.ajax({
