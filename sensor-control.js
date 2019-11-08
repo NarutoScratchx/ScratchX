@@ -144,8 +144,10 @@
                 callback(data.humidity);
             },
             error : function(){
+		callback('');
             },
             complete: function(data) {
+		callback('');
             }
     });
   };
@@ -160,8 +162,10 @@
                 callback(data.light);
             },
             error : function(){
+		callback('');
             },
             complete: function(data) {
+		callback('');
             }
     });
   };
@@ -176,8 +180,10 @@
                 callback(data.Motion);
             },
             error : function(){
+		callback('');
             },
             complete: function(data) {
+		callback('');
             }
     });
   };
@@ -191,8 +197,10 @@
                 callback(data.distance);
             },
             error : function(){
+		callback('');
             },
             complete: function(data) {
+		callback('');
             }
     });
   };
