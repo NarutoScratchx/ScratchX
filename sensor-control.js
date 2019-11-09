@@ -43,9 +43,11 @@
           dataType:'text',
           success: function(data){
             console.log(data.result);
+		callback('');
           },
           error : function(){
             console.log('error');
+		callback('');
           }
     });
   };
@@ -59,9 +61,11 @@
           dataType:'text',
           success: function(data){
             console.log(data.result);
+		callback('');
           },
           error : function(){
             console.log('error');
+		callback('');
           }
     });
   };
@@ -75,9 +79,11 @@
           dataType:'text',
           success: function(data){
             console.log(data.result);
+		callback('');
           },
           error : function(){
             console.log('error');
+		callback('');
           }
     });
   };
@@ -92,8 +98,10 @@
           dataType:'text',
           success: function(data){
             console.log(data.result);
+		callback('');
           },
           error : function(){
+		callback('');
             console.log('error');
           }
     });
@@ -110,9 +118,11 @@
                         callback(data.co2);
                      },
             error : function(){
+		callback('');
                         //console.log("error");
                     },
             complete: function(data){
+		callback('');
                         //console.log("complete");
                       }
     });
@@ -128,8 +138,10 @@
                 callback(data.temp);
             },
             error : function(){
+		callback('');
             },
             complete: function(data) {
+		callback('');
             }
     });
   };
